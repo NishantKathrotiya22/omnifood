@@ -12,6 +12,7 @@
 
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
     <title>omnifood</title>
 </head>
 
@@ -19,15 +20,19 @@
     <header>
         <nav class="navbar">
             <a>
-                <img class="logo" src="/content/img/omnifood-logo.png" alt="Omnifood Logo">
+                <img class="logo" src="content/img/omnifood-logo.png" alt="Omnifood Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="#services">How It Works</a></li>
-                <li><a href="#about">Meals</a></li>
-                <li><a href="#contact">Testimonials</a></li>
-                <li><a href="#blog">Pricing</a></li>
-                <li><a href="#" class="cta">Try For Free</a></li>
+                <li><a href="#howitworks" class="nav-anchor">How It Works</a></li>
+                <li><a href="#meals" class="nav-anchor">Meals</a></li>
+                <li><a href="#testimonials" class="nav-anchor">Testimonials</a></li>
+                <li><a href="#pricing" class="nav-anchor">Pricing</a></li>
+                <li><a href="#" class="cta nav-anchor">Try For Free</a></li>
             </ul>
+            <button class="nav-btn" id="menu-btn">
+                <ion-icon name="close-outline" class="icon"></ion-icon>
+                <ion-icon name="menu-outline" class="icon"></ion-icon>
+            </button>
     </header>
 
     <main>
@@ -53,27 +58,26 @@
                         </p>
                     </div>
                 </div>
-                <div>
-                    <img class="hero-img" src="/content/img/hero.png" alt="Healthy Food">
+                <div class="hero-img-container">
+                    <img class="hero-img" src="content/img/hero.png" alt="Healthy Food">
                 </div>
             </div>
         </section>
-
 
         <section class="section-featured">
             <div class="container">
                 <h3 class="featured-heading">as featured in</h3>
                 <div class="fearured-img">
-                    <img src="/content/img/logos/techcrunch.png" alt="techcrunch">
-                    <img src="/content/img/logos/business-insider.png" alt="business-insider">
-                    <img src="/content/img/logos/the-new-york-times.png" alt="the-new-york-times">
-                    <img src="/content/img/logos/forbes.png" alt="forbes">
-                    <img src="/content/img/logos/usa-today.png" alt="usa-today">
+                    <img src="content/img/logos/techcrunch.png" alt="techcrunch">
+                    <img src="content/img/logos/business-insider.png" alt="business-insider">
+                    <img src="content/img/logos/the-new-york-times.png" alt="the-new-york-times">
+                    <img src="content/img/logos/forbes.png" alt="forbes">
+                    <img src="content/img/logos/usa-today.png" alt="usa-today">
                 </div>
             </div>
         </section>
 
-        <section class="section-how">
+        <section class="section-how" id="howitworks">
             <div class="container">
                 <span class="subheading">How It Works</span>
                 <h2 class="heading-secondary heading">Your daily dose of health in 3 simple steps</h2>
@@ -95,14 +99,14 @@
                     </p>
                 </div>
 
-                <div class="step-img">
-                    <img src="/content/img/app/app-screen-1.png" alt="Iphone Screen with Choices">
+                <div class="step-img ">
+                    <img src="content/img/app/app-screen-1.png" alt="Iphone Screen with Choices">
                 </div>
 
 
 
                 <div class="step-img">
-                    <img src="/content/img/app/app-screen-3.png" alt="Iphone Screen with Choices">
+                    <img src="content/img/app/app-screen-3.png" alt="Iphone Screen with Choices">
                 </div>
 
                 <div class="step-description">
@@ -128,19 +132,19 @@
 
 
                 <div class="step-img">
-                    <img src="/content/img/app/app-screen-2.png" alt="Iphone Screen with Choices">
+                    <img src="content/img/app/app-screen-2.png" alt="Iphone Screen with Choices">
                 </div>
 
         </section>
 
-        <section class="section-how">
+        <section class="section-how" id="meals">
             <div class="container center">
                 <span class="subheading">MEALS</span>
                 <h2 class="heading-secondary heading">Omnifood AI chooses from 5,000+ recipes</h2>
             </div>
             <div class="container grid grid--3-cols margin-bottom-md">
                 <div class="meal">
-                    <img src="/content/img/meals/meal-1.jpg" alt="Meal 1" class="meal-img">
+                    <img src="content/img/meals/meal-1.jpg" alt="Meal 1" class="meal-img">
                     <div class="meal-content">
                         <div class="meal-tags">
                             <span class="tag vegeterian-tag">Vegetarian</span>
@@ -164,7 +168,7 @@
 
                 </div>
                 <div class="meal">
-                    <img src="/content/img/meals/meal-2.jpg" alt="Meal 1" class="meal-img">
+                    <img src="content/img/meals/meal-2.jpg" alt="Meal 1" class="meal-img">
                     <div class="meal-content">
                         <div class="meal-tags">
                             <span class="tag vegeterian-tag">Vegan</span>
@@ -233,14 +237,14 @@
             <div class="container all-recipe"> <a href="#" class="racipe-link">See All Recipe &rarr;</a></div>
         </section>
 
-        <section class="section-gallary">
+        <section class="section-gallary" id="testimonials">
             <div class="testimonial-container">
                 <p class="subheading">Testimonials</p>
                 <h2 class="heading-secondary heading">Once you try it, you can't go back</h2>
 
                 <div class="testimonials">
                     <figure class="testimonial">
-                        <img src="/content/img/customers/dave.jpg" alt="Customer photo" class="testimonial-img" />
+                        <img src="content/img/customers/dave.jpg" alt="Customer photo" class="testimonial-img" />
                         <blockquote class="testimonial-desciption">Inexpensive, healthy and great-tasting meals, without
                             even having to order manually!
                             It feels truly magical.</blockquote>
@@ -248,21 +252,21 @@
                     </figure>
 
                     <figure class="testimonial">
-                        <img src="/content/img/customers/ben.jpg" alt="Customer photo" class="testimonial-img" />
+                        <img src="content/img/customers/ben.jpg" alt="Customer photo" class="testimonial-img" />
                         <blockquote class="testimonial-desciption">The AI algorithm is crazy good, it chooses the right
                             meals for me every time. It's amazing not to worry about food anymore</blockquote>
                         <p class="testimonial-author">— Ben Hadley</p>
                     </figure>
 
                     <figure class="testimonial">
-                        <img src="/content/img/customers/steve.jpg" alt="Customer photo" class="testimonial-img" />
+                        <img src="content/img/customers/steve.jpg" alt="Customer photo" class="testimonial-img" />
                         <blockquote class="testimonial-desciption">Omnifood is a life saver! I just started a company,
                             so there's no time for cooking.
                             I couldn't live without my daily meals now!</blockquote>
                         <p class="testimonial-author">— Steve Miller</p>
                     </figure>
                     <figure class="testimonial">
-                        <img src="/content/img/customers/hannah.jpg" alt="Customer photo" class="testimonial-img" />
+                        <img src="content/img/customers/hannah.jpg" alt="Customer photo" class="testimonial-img" />
                         <blockquote class="testimonial-desciption">I got Omnifood for the whole family, and it frees up
                             so much time! Plus, everything
                             is organic and vegan and without plastic.</blockquote>
@@ -274,75 +278,75 @@
 
             <div class="gallary-grid">
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-1.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-1.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-2.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-2.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-3.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-3.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-4.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-4.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-5.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-5.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-6.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-6.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-7.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-7.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-8.jpg" alt="Photo of beautifully
-            arranged food" />
-                    <!-- <figcaption>Caption</figcaption> -->
-                </figure>
-
-                <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-9.jpg" alt="Photo of beautifully
-            arranged food" />
-                    <!-- <figcaption>Caption</figcaption> -->
-                </figure>
-                <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-10.jpg" alt="Photo of beautifully
-            arranged food" />
-                    <!-- <figcaption>Caption</figcaption> -->
-                </figure>
-                <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-11.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-8.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="/content/img/gallery/gallery-12.jpg" alt="Photo of beautifully
+                    <img src="content/img/gallery/gallery-9.jpg" alt="Photo of beautifully
+            arranged food" />
+                    <!-- <figcaption>Caption</figcaption> -->
+                </figure>
+                <figure class="gallery-item">
+                    <img src="content/img/gallery/gallery-10.jpg" alt="Photo of beautifully
+            arranged food" />
+                    <!-- <figcaption>Caption</figcaption> -->
+                </figure>
+                <figure class="gallery-item">
+                    <img src="content/img/gallery/gallery-11.jpg" alt="Photo of beautifully
+            arranged food" />
+                    <!-- <figcaption>Caption</figcaption> -->
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="content/img/gallery/gallery-12.jpg" alt="Photo of beautifully
             arranged food" />
                     <!-- <figcaption>Caption</figcaption> -->
                 </figure>
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <p class="subheading">Pricing</p>
                 <h2 class="heading-secondary heading">Eating well without breaking the bank</h2>
@@ -489,8 +493,8 @@
                                 </select>
                             </div>
 
-                            <button class="btn ">Sign up now</button>
-                            btn--form
+                            <button class="btn btn--form">Sign up now</button>
+
                             <!-- <input type="checkbox" />
                 <input type="number" /> -->
                         </form>
@@ -505,7 +509,7 @@
 
                 <div class="logo-col">
                     <a class="footer-logo-box">
-                        <img src="./content/img/omnifood-logo.png" alt="omnifood logo" class="footer-logo">
+                        <img src="content/img/omnifood-logo.png" alt="omnifood logo" class="footer-logo">
                     </a>
                     <ul class="footer-social">
                         <li class="social-items"><a href="#"><ion-icon class="social-icon"
@@ -563,6 +567,7 @@
         </footer>
 
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

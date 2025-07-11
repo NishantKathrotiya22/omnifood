@@ -125,6 +125,9 @@
 html {
     font-size: 62.5%;
     /* 1rem = 10px */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 
 body {
@@ -132,6 +135,8 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
+
 }
 
 .margin-right-sm {
@@ -269,6 +274,27 @@ body {
     color: #fff;
     padding: 1.2rem 2.4rem;
     border-radius: 9px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 101;
+    padding: 0;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.nav-btn {
+    display: none;
 }
 
 
@@ -415,6 +441,9 @@ body {
     filter: brightness(0);
     opacity: 50%;
 }
+
+
+
 
 /****************************************/
 /*              How Section             */
@@ -728,9 +757,24 @@ body {
 }
 
 .fill-card {
+    position: relative;
     background-color: var(--color-tint-1);
     justify-self: start;
 }
+
+.fill-card::after {
+    content: 'Best Value';
+    position: absolute;
+    top: 6%;
+    right: -18%;
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    padding: 0.8rem 8rem;
+    background: linear-gradient(135deg, #fff89e 0%, #ffd43b 40%, #fcb900 70%, #c49000 100%);
+    transform: rotate(45deg);
+}
+
 
 .outline-card {
     border: 2px solid var(--color-tint-1);
@@ -1016,4 +1060,18 @@ footer {
 .footer-link:hover,
 .footer-link:active {
     color: #555;
+}
+
+.sticky header .navbar {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 102;
+    box-shadow: 0 1.2rem 0.8rem 1.2rem rgba(216, 216, 216, 0.093);
+}
+
+.sticky .hero {
+    margin-top: 76.8px;
 }
